@@ -1,0 +1,300 @@
+<html>
+<link rel="stylesheet" href="Main.css">
+<link rel="stylesheet" href="Button.css">
+<head>
+<title>
+Methods
+</title>
+</head>
+<body>
+<div id = "header1">
+<br>
+<span style= "font-size: 25px;">Methods</span>
+</div>
+<br><br><br>
+<center>
+<table>
+	<col width= "225px">
+	<col width= "200px">
+	<col width= "200px">
+	<col width= "600px">
+	<tr>
+		<th>FUNCTION
+		</th>
+		<th>PARAMETERS
+		</th>
+		<th>RETURN TYPE
+		</th>
+		<th>DESCRIPTION
+		</th>
+	</tr>
+	<tr>
+		<td>
+		keyboard
+		</td>
+		<td>
+		unsigned char key, int x, int y
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		To Perform Action Based On The Key Pressed
+		</td>
+	</tr>
+		<tr>
+		<td>
+		drawColoredCube
+		</td>
+		<td>
+		float r, float g, float b
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Draws A Unit Cube With Specified RGB Color
+		</td>
+	</tr>
+		<tr>
+		<td>
+		drawCube
+		</td>
+		<td>
+		float r, float g, float b
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Function Which Calls drawColored Cube And<br>
+		Specifies That The Cube Drawn Is Solid
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawWalls
+		</td>
+		<td>
+		-
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Draws The Surrounding Walls For Both The Rooms<br>
+		Consists Of 13 Components Including Ceiling and Floor
+		</td>
+	</tr>
+	<tr>
+		<td>
+		chairLeg
+		</td>
+		<td>
+		double t, double b, double l
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Draws A Chair Leg Based On The Passed Parameters
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawChair
+		</td>
+		<td>
+		float x, float y, float z, double height
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Draws Chair At Given Position And Also <br>
+		Based On The Specified Leg Height
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawDoor
+		</td>
+		<td>
+		-
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Draws The Door In Room 1. Not Parameterized<br>
+		As Only One Door Is Required
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawLight
+		</td>
+		<td>
+		int x, int y, int z
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Used For Drawing The Tubelights In Both Rooms
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawTV
+		</td>
+		<td>
+		-
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Draws The Television In Room 1. Not Parameterized<br>
+		As Only One Is Required
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawWindow
+		</td>
+		<td>
+		float x, float y, float z
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Used For Drawing The Windows In Both Rooms
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawLTable
+		</td>
+		<td>
+		float x, float y, float z
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Used For Drawing The Large Desk In Room 1
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawBed
+		</td>
+		<td>
+		float x, float y, float z
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Used For Drawing The Bed In Room 2
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawSofa
+		</td>
+		<td>
+		float x, float y, float z
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Used For Drawing The Sofa In Room 1
+		</td>
+	</tr>
+	<tr>
+		<td>
+		drawSTable
+		</td>
+		<td>
+		float x, float y, float z
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Used For Drawing The Small Table In Room 2
+		</td>
+	</tr>
+	<tr>
+		<td>
+		display
+		</td>
+		<td>
+		-
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Display callback for OpenGL. Calls All The Other<br> Functions That Are Used For Drawing Objects
+		</td>
+	</tr>
+	<tr>
+		<td>
+		init
+		</td>
+		<td>
+		-
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Initialization Function
+		</td>
+	</tr>
+	<tr>
+		<td>
+		reshape
+		</td>
+		<td>
+		GLsizei width, GLsizei height
+		</td>
+		<td>
+		void
+		</td>
+		<td>
+		Sets The Aspect Ratio Of the Clipping Volume To Match The Viewport, The Viewport To Cover New Window and Enables Perspective Projection
+		</td>
+	</tr>
+	<tr>
+		<td>
+		main
+		</td>
+		<td>
+		int argc, char *argv[]
+		</td>
+		<td>
+		int
+		</td>
+		<td>
+		The main funciton called by the OS
+		</td>
+	</tr>
+	<tr>	
+		<td colspan="4">
+		All functions which have parameters x, y and z irrespective of the data type are parameterized in such a way that the object created can be translated along any of the axes based on the values used in calling the function.
+		</td>
+	</tr>
+</table>
+</center>
+<br><br><br>
+<div id = "footer2">
+<br><br>
+</div> 
+</body>
+</html>
